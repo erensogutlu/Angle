@@ -1,0 +1,38 @@
+# Python Byte Code & Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Test & Coverage Files
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+testler/
+
+# Environments & Packages
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Generated Logs, Reports & Output Files
+toplanan_kimlikler.txt
+rapor.html
+rapor.json
+oltalama_sayfasi/
+oltalama_qr.png
+loglar/
+*.log
+
+# IDE & System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

